@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Nitish Reddy Kapa - Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const Header = () => (
+      <header className="bg-blue-900 text-white py-6">
+        <div className="container mx-auto px-4 text-center">
+          <h1 className="text-4xl font-bold">Sai Nitish Reddy Kapa</h1>
+          <p className="text-lg mt-2">Senior Analyst, Data Science | Buffalo, NY</p>
+          <div className="mt-4 flex justify-center space-x-4">
+            <a href="mailto:kapasainitishreddy@gmail.com" className="hover:underline">kapasainitishreddy@gmail.com</a>
+            <span>|</span>
+            <a href="https://www.linkedin.com/in/sai-nitish-reddy-kapa" target="_blank" rel="noopener noreferrer" className="hover:underline">LinkedIn</a>
+            <span>|</span>
+            <span>716-253-5068</span>
+          </div>
+        </div>
+      </header>
+    );
+
+    const Summary = () => (
+      <section className="py-8 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-semibold mb-4 text-center">Summary</h2>
+          <p className="text-lg leading-relaxed text-gray-700">
+            Senior Analyst, Data Science with a Master's degree in Data Science and 3 years of experience in informatics work, adept at deriving insights from complex datasets and developing analytical solutions. Proven ability to formulate SQL queries to extract insights from diverse data sources, including experience relevant to cleanroom data and various analytics platforms (e.g., Google ADH, Amazon Marketing Cloud). Skilled in conducting descriptive and diagnostic analyses to evaluate campaign performance, designing impactful dashboards, and embracing innovative modeling techniques to enhance measurement capabilities. Possesses intermediate programming language skills (SQL, Python), a basic understanding of machine learning techniques and causal models, and a strong analytical mindset to support strategic decision-making in advertising and marketing.
+          </p>
+        </div>
+      </section>
+    );
+
+    const Skills = () => (
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-semibold mb-4 text-center">Skills</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-xl font-medium mb-2">Data Science & Analytics</h3>
+              <ul className="list-disc list-inside text-gray-700">
+                <li>Descriptive and Diagnostic Analyses</li>
+                <li>Campaign Performance Evaluation</li>
+                <li>Causal Models (Basic)</li>
+                <li>Machine Learning Techniques (Basic)</li>
+                <li>Cleanroom Data Concepts</li>
+                <li>Google ADH, Amazon Marketing Cloud, Facebook Advanced Analytics (Conceptual)</li>
+                <li>Strategy Optimization, Measurement Frameworks</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-medium mb-2">Programming Tools</h3>
+              <ul className="list-disc list-inside text-gray-700">
+                <li>SQL (Intermediate)</li>
+                <li>Python (Intermediate)</li>
+                <li>R (Conceptual)</li>
+                <li>Snowflake, Power BI, Microsoft Visual Studio</li>
+                <li>SSIS, SSMS, Excel</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-medium mb-2">Data Management & Engineering</h3>
+              <ul className="list-disc list-inside text-gray-700">
+                <li>Data Integration, Data Pipelines</li>
+                <li>Data Warehousing, Data Quality</li>
+                <li>ETL Processes, Query Optimization</li>
+                <li>Data Repository Development, API Management</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-medium mb-2">Communication & Collaboration</h3>
+              <ul className="list-disc list-inside text-gray-700">
+                <li>Clear Communication of Findings</li>
+                <li>Internal Stakeholder Management</li>
+                <li>Senior Leadership Presentations</li>
+                <li>Cross-functional Team Collaboration</li>
+                <li>Analytical Project Support, Problem-Solving</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+
+    const Experience = () => (
+      <section className="py-8 bg-gray-100">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-semibold mb-4 text-center">Experience</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-medium">Data Analyst | WFO | Jan 2024 - May 2025</h3>
+              <ul className="list-disc list-inside text-gray-700 mt-2">
+                <li>Formulated complex SQL queries to derive insights from various enterprise data sources.</li>
+                <li>Conducted descriptive and diagnostic analyses to evaluate operational performance.</li>
+                <li>Designed user-friendly dashboards in Power BI for strategy optimization.</li>
+                <li>Developed data pipelines and ETL processes for reliable data integration.</li>
+                <li>Communicated findings to stakeholders and senior leadership.</li>
+                <li>Assisted in building a knowledge repository through detailed documentation.</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-medium">Data Analyst | VN Technologies | Feb 2021 - Jan 2023</h3>
+              <ul className="list-disc list-inside text-gray-700 mt-2">
+                <li>Utilized SQL for data extraction and analysis to support business intelligence.</li>
+                <li>Developed expertise in API Management and data quality checks.</li>
+                <li>Contributed to technical documentation and standard operating procedures.</li>
+                <li>Collaborated with cross-functional teams and external vendors.</li>
+                <li>Applied conceptual understanding of audience analysis and performance tracking.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+
+    const Education = () => (
+      <section className="py-8">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-semibold mb-4 text-center">Education</h2>
+          <p className="text-lg text-gray-700">
+            <strong>Master of Science in Engineering Sciences, Data Science</strong><br />
+            State University of New York at Buffalo<br />
+            GPA: 3.633/4.0
+          </p>
+        </div>
+      </section>
+    );
+
+    const Footer = () => (
+      <footer className="bg-blue-900 text-white py-4 text-center">
+        <p>&copy; 2025 Sai Nitish Reddy Kapa. All rights reserved.</p>
+      </footer>
+    );
+
+    const App = () => (
+      <div>
+        <Header />
+        <Summary />
+        <Skills />
+        <Experience />
+        <Education />
+        <Footer />
+      </div>
+    );
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
